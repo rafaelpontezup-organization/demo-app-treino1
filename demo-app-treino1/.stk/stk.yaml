@@ -1,0 +1,31 @@
+schema-version: v2
+kind: manifest
+metadata:
+  name: demo-app-treino1
+  description: demo-app-treino1
+  starter: popcorn-studio-treino-1/spring-boot-rest-api-stack@1.1.0/rest-api-base
+  stack-version-id: 01HD7AGBY9D2BE9E008Q4B26QA
+  stack: spring-boot-rest-api-stack@1.1.0
+spec:
+  type: app
+  plugins:
+    - name: popcorn-studio-treino-1/spring-boot-rest-api-stack@1.1.0/popcorn-springboot-base-plugin@0.0.1
+      alias: popcorn-springboot-base-plugin-1697831998119
+      plugin-version-id: 01HD79ZE255CVFEX2HXEMJ35JH
+      stack-version-id: 01HD7AGBY9D2BE9E008Q4B26QA
+      type: app
+      inputs:
+        project_name: demo-app-treino1
+        project_group_id: br.com.zup.cinema
+        project_artifact_id: ingressos
+        project_springboot_version: 3.1.5
+        project_java_version: '17'
+      inputs-envs: {}
+      connections:
+        generates: []
+        requires: []
+      links:
+        generates: []
+  global-inputs: {}
+  global-computed-inputs: {}
+  repository: https://github.com/rafaelpontezup-organization/demo-app-treino1.git
